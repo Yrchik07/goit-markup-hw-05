@@ -309,9 +309,24 @@
             </button>
             <p class="modal_title">Leave your contacts and we will call you back</p>
             <form class="modal_form">
-                <input class="modal_input first" type="text">
-                <input class="modal_input" type="text">
-                <input class="modal_input" type="text">
+                <div class="modal_field">
+                    <label class="modal_labe" for="user_name">Name</label>
+                    <div class="input_wrap">
+                        <input class="modal_input" id="user_name" name="user_name" type="text">  
+                        <svg class="modal_icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                    </div>
+                </div>
+                <div class="modal_field">
+                    <label class="modal_labe" for="user_phone">Phone</label>
+                    <input class="modal_input" id="user_phone" name="user_phone" type="tel">    
+                </div>
+                <div class="modal_field">
+                    <label class="modal_labe" for="user_email">Email</label>
+                    <input class="modal_input" id="user_email" name="user_email" type="email">    
+                </div>
+                <button class="modal-form-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
