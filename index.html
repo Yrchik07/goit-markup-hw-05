@@ -300,7 +300,7 @@
             </div>
         </div>
     </footer>
-    <div class="beckdrop">
+    <div class="beckdrop is-open">
         <div class="modal">
             <button class="modal_btn" type="button">
                 <svg class="modal_btn_icon" width="24" height="24">
@@ -320,12 +320,26 @@
                 </div>
                 <div class="modal_field">
                     <label class="modal_labe" for="user_phone">Phone</label>
-                    <input class="modal_input" id="user_phone" name="user_phone" type="tel">    
+                    <div class="input_wrap">
+                        <input class="modal_input" id="user_phone" name="user_phone" type="tel">
+                        <svg class="modal_icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>        
+                    </div>
                 </div>
                 <div class="modal_field">
                     <label class="modal_labe" for="user_email">Email</label>
-                    <input class="modal_input" id="user_email" name="user_email" type="email">    
+                    <div class="input_wrap">
+                        <input class="modal_input" id="user_email" name="user_email" type="email"> 
+                        <svg class="modal_icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>   
+                    </div>
                 </div>
+                <div class="modal_field">
+                        <label class="modal_labe" for="user_text">Comment</label>
+                        <textarea class="madal_textarea" id="user_text" name="user_text" placeholder="Text input"></textarea>
+                    </div>
                 <button class="modal-form-btn" type="submit">Send</button>
             </form>
         </div>
