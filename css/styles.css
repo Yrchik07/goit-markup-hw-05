@@ -411,6 +411,19 @@ display: block;
     background-color: #31d0aa;
 }
 
+/*footer form*/
+.basement_box{
+    width: 453px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-left: 80px;
+}
+.basement_form{
+    display: flex;
+    gap: 24px;
+}
+
+
 /* modalca */
 
 .beckdrop{
