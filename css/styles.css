@@ -457,7 +457,6 @@ display: block;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
-    margin-left: 24px;
 }
 .basement_btn_icon{
     margin-left: 16px;
@@ -583,7 +582,7 @@ display: block;
 }
 .modal_icon{
     position: absolute;
-    stroke: #2e2f42;
+    fill: #2e2f42;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -622,11 +621,8 @@ display: block;
     margin-bottom: 24px;
 }
 .check_text{
-    display: flex;
-    align-items: center;
     color: #8E8F99;
     font-size: 12px;
-    font-style: normal;
     line-height: 14px; /* 116.667% */
     letter-spacing: 0.48px;
     line-height: 1.17;
@@ -646,15 +642,9 @@ display: block;
     align-items: center; 
     justify-content: center;
     fill: transparent;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 }
 .modal_check:checked + .check_text > .check_text_box{
     border: none; 
     background-color: #404bbf;
-    fill: #F4F4FD;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+    fill: #f4fdf4;
 }
