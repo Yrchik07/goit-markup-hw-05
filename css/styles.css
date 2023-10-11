@@ -646,5 +646,5 @@ display: block;
 .modal_check:checked + .check_text > .check_text_box{
     border: none; 
     background-color: #404bbf;
-    fill: #f4fdf4;
+    fill: #F4F4FD;
 }
