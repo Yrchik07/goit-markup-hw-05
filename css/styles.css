@@ -13,7 +13,6 @@ body{
     margin: -1px;
     border: 0;
     padding: 0;
-    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -61,7 +60,9 @@ section{
     padding-bottom: 120px;
     min-width: 1440px;
 }
-
+input{
+    font-size: 12px;
+}
 /*header*/
 .top_line{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -317,7 +318,7 @@ display: block;
 .portfolio_item{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio_item:hover, .portfolio_text:hover{
+.portfolio_item:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
 }
 .portfolio_img_box{
@@ -413,10 +414,8 @@ display: block;
 
 /*footer form*/
 .basement_box{
-    width: 453px;
-    height: 80px;
     flex-shrink: 0;
-    margin-left: 80px;
+    margin-left: auto;
 }
 .basement_form{
     display: flex;
@@ -457,6 +456,10 @@ display: block;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basement_btn:hover, .basement_btn:focus{
+    background-color: #404BBF;
 }
 .basement_btn_icon{
     margin-left: 16px;
@@ -567,6 +570,9 @@ display: block;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-btn:hover, .modal-form-btn:focus{
+    background-color: #404BBF;
+}
 .modal_labe{
     display: block;
     color: #8E8F99;
@@ -647,4 +653,7 @@ display: block;
     border: none; 
     background-color: #404bbf;
     fill: #F4F4FD;
+}
+.modal_check:focus + .check_text > .check_text_box {
+    border-color: #4D5AE5;
 }
